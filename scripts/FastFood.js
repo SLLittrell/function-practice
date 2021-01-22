@@ -1,12 +1,9 @@
-const takeOutBag = orderMeal("Ultimate Slammer", "Fudge sundae", "Mr. Pepper", "Potato wedges")
-export const fastFood = () => {
-    for (const meal of takeOutBag) {  
-        
-    }
+
+export const orderMeal = (sandwich, side, ...rest) => {
     return {
-        sandwich: `${meal}`,
-        side: '',
-        drink: '',
-        dessert:
+        sandwich: `${sandwich}`,
+        side: `${side}`,
+        drink: `${rest[0]}`,
+        dessert:`${rest[1]}`
     }
 }

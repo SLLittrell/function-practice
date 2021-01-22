@@ -6,6 +6,7 @@ import {evenOrOdd} from './EvensAndOdds.js'
 import {unwantedWords} from './DoubleFunctions.js'
 import {wordString} from './DoubleFunctions.js'
 import {svenChances} from './Tuna.js'
+import {orderMeal} from './FastFood.js'
 
 
 const breed =dogBreed("meow")
@@ -25,3 +26,6 @@ console.log(sentence)
 
 const svenFish = svenChances(2)
 console.log(svenFish)
+
+const takeOutBag = orderMeal("Ultimate Slammer", "Fudge sundae", "Mr. Pepper", "Potato wedges")
+console.log(takeOutBag)
